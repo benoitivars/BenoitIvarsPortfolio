@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <div class="titles">
+            <h1>Benoît Ivars</h1>
+            <h2>The Guy Crafting the Back-End <br> for Front-End Mates</h2>
+        </div>
+        <div class ="indexGrid">
+            <div class="grid-item introduction">
+                <h3>Training</h3>
+                <p>Starting out in the world of web development, I have acquired the fundamental skills of a junior web developer with a focus on the MERN stack over just a few months at BeCode. Throughout this seven-month intensive training, I developed a strong interest in back-end development and web project architecture. This specialization enables me to deliver well-designed APIs and efficient back-end solutions that precisely meet the needs of front-end developers, thanks to my comprehensive understanding gained from full-stack training.</p>
+                <h3>Learned technologies</h3>
+                <div class = myTechs>
+                    <i class="fa-brands fa-markdown"></i>
+                    <i class="fa-brands fa-git-alt"></i>
+                    <i class="fa-brands fa-html5"></i>
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <i class="fa-brands fa-sass"></i>
+                    <i class="fa-brands fa-js"></i>
+                    <i class="fa-brands fa-node-js"></i>
+                </div>
+                <p>Databases : mySQL and MongoDB</p>
+                <p>Framework : Express</p>
+                <h3>Apprenticeship in progress or possible</h3>
+                <div class = myTechs>
+                    <i class="fa-brands fa-react"></i>
+                    <i class="fa-brands fa-php"></i>
+                    <i class="fa-brands fa-wordpress"></i>
+                    <i class="fa-brands fa-laravel"></i>
+                    <i class="fa-brands fa-python"></i>
+                </div>
+                <p>Framework : Django</p>
+            </div>
+            <div class="grid-item myPic">
+                <img src='/images/myPic.jpg' alt="my picture">
+            </div>
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+    <script src="/js/animationsH1/animationH1.js"></script>
+    <script src="/js/darkMode.js"></script>
+    <script src="/js/displayMenu.js"></script>
+</body>
+</html>

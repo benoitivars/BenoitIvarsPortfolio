@@ -1,0 +1,164 @@
+@import '_colors';
+@import '_fonts'; 
+
+
+
+
+.myTechs {
+    display: flex;
+    justify-content: flex-start; /* Centre les icônes horizontalement */
+    align-items: center; /* Centre les icônes verticalement */
+    flex-wrap: wrap; /* Permet aux icônes de passer à la ligne suivante si l'espace est insuffisant */
+    gap: 40px; /* Ajoute un espace entre les icônes */
+}
+
+.myTechs i {
+    font-size:36px;
+}
+
+.introduction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+@media (max-width: 1023px) {
+    .indexGrid {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(0.5fr 1fr 0.5fr);
+        // gap: 10px;
+    }
+
+    .myPic {
+        /* Faites en sorte que .myPic couvre 3x3 cases */
+        grid-column: 1;
+        grid-row: 1;
+        aspect-ratio: 1 / 1;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        border: 5px solid $lightGrey;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+
+    .myPic img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* Cela ajuste l'image à l'espace disponible sans déformation */
+        border-radius: 50%; /* Si l'image doit être ronde */
+    }
+
+    h3 {
+        margin-bottom: 4px;
+        font-size: 1.125rem;
+    }
+
+    p {
+        font-size: 15px;
+        font-family: $classicFont;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+
+    .myTechs i {
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .indexGrid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 10px;
+    }
+
+    .myPic {
+        /* Faites en sorte que .myPic couvre 3x3 cases */
+        grid-column: 2;
+        grid-row: 1;
+        aspect-ratio: 1 / 1;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        border: 5px solid $lightGrey;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .myPic img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* Cela ajuste l'image à l'espace disponible sans déformation */
+        border-radius: 50%; /* Si l'image doit être ronde */
+    }
+
+    h3 {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 1.5rem;
+    }
+
+
+    p {
+        font-size: 16px;
+        font-family: $classicFont;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+}
+
+@media (min-width: 1440px){
+    .indexGrid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 10px;
+    }
+
+    .myPic {
+        /* Faites en sorte que .myPic couvre 3x3 cases */
+        grid-column: 2;
+        grid-row: 1;
+        aspect-ratio: 1 / 1;
+        background-size: cover;
+        background-position: center;
+        border-radius: 50%;
+        border: 5px solid $lightGrey;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .myPic img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover; /* Cela ajuste l'image à l'espace disponible sans déformation */
+        border-radius: 50%; /* Si l'image doit être ronde */
+    }
+
+    h3 {
+        margin-top: 2px;
+        margin-bottom: 2px;
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 18px;
+        font-family: $classicFont;
+        margin-top: 2px;
+        margin-bottom: 2px;
+    }
+
+}
+
+
+

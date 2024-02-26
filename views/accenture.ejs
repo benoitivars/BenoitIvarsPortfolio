@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <div class="titles">
+            <h1>Accenture</h1>
+            <h2>A study case <br> about an API and an algorithm</h2>
+        </div>
+        <div class="projectExplaination">
+            <div class="explainations">
+            <h3>About this project</h3>
+            <p>Accenture is by contrast one of our latest projects ! It was a use case given by Accenture (a partner of BeCode) that asked us to code a web application that calculates the distance between a home place and a workplace to see if an employee is eligible to housing funds.</p>
+            <h3>Specific points of this exercise</h3>
+            <p>Accenture was a project with specific objectives.</p>
+            <p>From the technical perspective, we had to :</p>
+            <ul>
+                <li>- Write our own API</li>
+                <li>- Write the Front End code</li>
+                <li>- Find the good way to calculate the distance between the homeplace and the workplace</li>
+                <li>- Write the Back End</li>
+                <li>- The choice of the technologies was free. We choose to work with the MERN Stack.</li>
+            </ul>
+            <br>
+            <p>From the soft skills perspective, we had to :</p>
+            <ul>
+                <li>- Communicating with peers</li>
+                <li>- Being able to resist to pression and deadlines</li>
+                <li>- Being able to present it at Accenture's office</li>
+            </ul>
+            <br>
+            <p>We were three to work on this study case : one on the Front End, one on the fetches integrations and the distance calculating algorithm, and me, focusing on constructing of the back end/api.</p>
+            <p>The goal of this project was, after logging in, to provide access to two dashboards : 
+                <ul>
+                    <li>- One for the employees, and another for the managers. Employees can log on a calendar the days they work on, and the location from where they work. Then, the algorithm will see if, for the most recurrent workplace of the mounth if the employee is elligible or not</li>
+                    <li>- One for the managers who can find all the logs of each employee and see if he is eligible or not for housing funds. Furthermore, managers have the hability to create new employees and workplaces.</li>
+                </ul>
+            <h3>My opinion about this project</h3>
+            <p>The challenge have been a collective success, and a personnal one ! Far from my comfort zone, I had to code an API that is both compact and exhaustive, with only two collections, abble to present and combine a lot of various datas. Another challenge was, in the routes, to implement the algorithm of distance calculation and a trick to make the "home" option always eligible, as a middleware. I really enjoyed that work, full of abstraction and reflexion on the way to arrange datas in collections in ways that are pertinent and responding with the project requirements.</p>
+            <p>The collections are :</p>
+            <ul>
+                <li>- Users, with a idstinction between employees et managers through the "isAdmin" variable</li>
+                <li>- Location, where are stocked all the work locations</li>
+            </ul>
+            <p>Some of the most important endpoints are :</p>
+            <ul>
+                <li>- Getting all the users</li>
+                <li>- Getting a user by his ID</li>
+                <li>- Getting all the "calendar" datas (for a specific day, the location where an employee worked and a reference to the ID of that workplace in order to get accurate datas)</li>
+                <li>- A post route that creates a new calendar entry for an employee</li>
+                <li>- In that post route, the addition of a middleware in order to calculate the distance il order to post it too</li>
+                <li>- A patch road in order to update an employee's adress</li>
+                <li>- A post route that makes managers able to creat an employee with "CHANGEIT" as generic password</li>
+                <li>- A post route that makes managers able to create a new destiantion</li>
+                <li>- Of course, the post route to connect to the application.</li>
+            </ul>
+            <h3>Do you want to see this project ?</h3>
+            <p>Don't hesitate to follow this link that will lead you to the deployment of <a href="https://accenture-mvp.vercel.app/" target="_blank"><span class="boldLink">Accenture!</span></a></p>
+            <p>To try it, connect first with email: "hr@admin.com" and password: "password" in order to have a view on de manager's dashboard. From there, create a user profile. Its password will be "CHANGEIT". Now, you can disconnect from the manager's account et use the user's account you created.</p>
+        </div>
+        <div class="pictureProject">
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+    
+    <script src="/js/animationsH1/animationH1Accenture.js".js></script>
+    <script src="/js/darkMode.js"></script>
+    <script src="/js/displayMenu.js"></script>
+</body>
+</html>

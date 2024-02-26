@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    <main>
+        <div class="titles">
+            <h1>Prométhée</h1>
+            <h2>My most personnal project  <br> that helps you to deploy a back end</h2>
+        </div>
+        <div class="projectExplaination">
+            <div class="explainations">
+            <h3>About this project</h3>
+            <p>Prométhée is a personnal side project that I created while learning Back End coding. While we had to create in our exercises a lot of back end projects, that can be a repetitive task. That is why I decided to use readline in order to automatize the creation of a basic back end project on Node.JS !</p>
+            <h3>Specific points of this project</h3>
+            <p>This project is constructed with a lot of various scripts, in different repositories. The goal, when you use Prométhée's repository the "node projectGenitor.js", is to read all the various scripts and to follow create repositories and files of a small web project.</p>
+            <p>From the technical perspective, this project :</p>
+            <ul>
+                <li>- Installs some mandatory NPM for a project, like Express, Nodemon, Git</li>
+                <li>- Creates the folders for the MVC archtecture, plus the Routes Files</li>
+                <li>- Creates two partials for headers and footers</li>
+                <li>- Creates four EJS templates for four different pages : index, about, contact and 404</li>
+                <li>- Creates a Public folder, with an Images folder, a CSS folder (already containing some SASS components) and the View folders with the partials and the EJS templates</li>
+                <li>- Creates the "server.js" file that will allow you to lauch the server. Il this file, you will find all you need to be able to read EJS files, and to establish a connetion with a mongoDB database, if required</li>
+            </ul>
+            <br>
+            <h3>My opinion about this project</h3>
+            <p>This project is one of my most personnal, not a specific web dev one (we are instead in apps development here), but a tool that helps  to deploy a project with a basic, but solid back end, that you will abble to arrange to your convenience. I am really rpoud of it. And this achievment pushes me to go further on this way, in the one hand by updating Prométhée, and the other in, maybe, learning languages like C# or JAVA, by exploring other ways of coding.</p>
+            <h3>Do you want to see this project ?</h3>
+            <p>Don't hesitate to follow this link that will lead you to the repository of <a href="https://github.com/benoitivars/Promethee" target="_blank"><span class="boldLink">Prométhée!</span></a></p>
+            <p>Do not hesitate to download that alpha version, test it, and share me your comments !</p>
+        </div>
+        <div class="pictureProject">
+        </div>
+    </main>
+    <%- include('partials/footer') %>
+    <script src="/js/animationsH1/animationH1Promethee.js".js></script>
+    <script src="/js/darkMode.js"></script>
+    <script src="/js/displayMenu.js"></script>
+</body>
+</html>

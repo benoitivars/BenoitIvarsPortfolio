@@ -1,0 +1,28 @@
+@import '_fonts';
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, p, h3 {
+    font-family: $classicFont;
+    line-height:2;
+}
+
+body {
+    font-size: 16px;
+}

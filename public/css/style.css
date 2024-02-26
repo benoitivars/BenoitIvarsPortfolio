@@ -1,0 +1,634 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anta&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+a, p, h3 {
+  font-family: "Montserrat", sans-serif;
+  line-height: 2;
+}
+
+body {
+  font-size: 16px;
+}
+
+/*BACKGROUND-COLORS*/
+/* Text Colors for Contrast */
+/* For $clearBackground2 */
+/* Dark Background Colors */
+/* Text Colors for Dark Backgrounds */
+/* Fire colors*/
+/* Light grey */
+h1 {
+  position: relative;
+  font-family: "Anta", sans-serif;
+  display: inline-block;
+  font-size: 5em;
+  color: #FF6723;
+  left: 6vw;
+}
+
+span {
+  border-right: 0.05em solid;
+  animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+}
+/*BACKGROUND-COLORS*/
+/* Text Colors for Contrast */
+/* For $clearBackground2 */
+/* Dark Background Colors */
+/* Text Colors for Dark Backgrounds */
+/* Fire colors*/
+/* Light grey */
+/*BACKGROUND-COLORS*/
+/* Text Colors for Contrast */
+/* For $clearBackground2 */
+/* Dark Background Colors */
+/* Text Colors for Dark Backgrounds */
+/* Fire colors*/
+/* Light grey */
+/* Styles par défaut pour le mode clair */
+body {
+  transition: background-color 0.4s, color 0.4s;
+  background-color: #f0f0f0;
+  color: #162238;
+}
+
+header {
+  transition: background-color 0.4s, color 0.4s;
+  background-color: #f0f0f0;
+  border-bottom: 2px #162238 solid;
+}
+
+footer {
+  transition: background-color 0.4s, color 0.4s;
+  background-color: #f0f0f0;
+  border-top: 2px #162238 solid;
+}
+
+.bottomBar {
+  background-color: #162238;
+}
+
+a {
+  transition: background-color 0.4s, color 0.4s;
+  color: #162238;
+}
+
+.hamburger .bar {
+  transition: background-color 0.4s, color 0.4s;
+  background-color: #162238;
+}
+
+.menu-liste.active {
+  border: 2px #162238 solid;
+  background-color: #f0f0f0;
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+  background-color: #162238;
+  color: #f0f0f0;
+}
+.dark-mode header {
+  background-color: #162238;
+  border-bottom: 2px #f0f0f0 solid;
+}
+.dark-mode footer {
+  background-color: #162238;
+  border-top: 2px #f0f0f0 solid;
+}
+.dark-mode .bottomBar {
+  background-color: #f0f0f0;
+}
+.dark-mode a {
+  color: #f0f0f0;
+}
+.dark-mode .hamburger .bar {
+  background-color: #f0f0f0;
+}
+.dark-mode .menu-liste.active {
+  border: 2px #f0f0f0 solid;
+  background-color: #162238;
+}
+
+footer {
+  margin: 0 auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 471px) {
+  .bottom1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .siders {
+    width: 200px;
+  }
+  .icons i {
+    font-size: 36px;
+    margin-right: 25px;
+    margin: 2px 0 2px 0;
+    gap: 20px;
+  }
+  .icons i:last-child {
+    margin-right: 0;
+  }
+}
+@media (max-width: 470px) {
+  .bottom1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .siders {
+    width: none;
+  }
+  .icons {
+    display: flex;
+    gap: 20px;
+  }
+  .icons i {
+    font-size: 36px;
+  }
+}
+.contactMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 2px 0 2px 0;
+}
+
+.bottomBar {
+  margin: auto;
+  width: 75vw;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bottom2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+/*BACKGROUND-COLORS*/
+/* Text Colors for Contrast */
+/* For $clearBackground2 */
+/* Dark Background Colors */
+/* Text Colors for Dark Backgrounds */
+/* Fire colors*/
+/* Light grey */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 30px 30px;
+  z-index: 10;
+  opacity: 1;
+}
+
+.logo a {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 24px;
+  position: relative;
+  top: -6px;
+}
+.logo a:before {
+  content: "{🔥}";
+  font-size: 1.5em;
+}
+
+.nav-menu {
+  align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+@media (max-width: 1023px) {
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    position: static;
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: 0.4s ease-in-out;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+    transition: 0.4s;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+    transition: 0.4s;
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-12px) rotate(-45deg);
+    transition: 0.4s;
+  }
+  .menu-liste {
+    display: flex; /* Remplacez 'none' par 'flex' pour permettre la transition */
+    flex-direction: column;
+    position: fixed; /* ou 'absolute', selon le besoin */
+    top: 133px;
+    z-index: 100; /* Assure que le menu est au-dessus des autres éléments */
+    opacity: 0; /* Commencez invisible */
+    visibility: hidden; /* Rendre non visible initialement */
+    transition: visibility 0s linear 0.4s, opacity 0.4s linear; /* Transition pour 'visibility' et 'opacity' */
+    right: 0px;
+    width: 50%;
+  }
+  .nav-menu ul li {
+    text-align: center;
+  }
+  .menu-liste.active {
+    opacity: 1; /* Pleinement visible quand actif */
+    visibility: visible; /* Rendre visible */
+    transition: opacity 0.4s linear; /* Transition pour 'opacity' seulement, 'visibility' n'a pas besoin de retard ici */
+  }
+  header + main {
+    padding-top: 140px;
+  }
+}
+@media (min-width: 1024px) {
+  .hamburger {
+    display: none;
+  }
+  .menu-liste {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: auto;
+    opacity: 1; /* Test du code */
+    visibility: visible; /* Test du code */
+    top: 40px; /* Ajusté pour 'margin-top: 238px;' */
+  }
+  .menu-liste ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+  }
+  .menu-liste li {
+    padding: 0 10px;
+  }
+  .menu-liste li:last-child {
+    padding-right: 0;
+  }
+  .dark-mode-toggle {
+    bottom: 3px;
+  }
+  header + main {
+    padding-top: 140px;
+  }
+}
+/*BACKGROUND-COLORS*/
+/* Text Colors for Contrast */
+/* For $clearBackground2 */
+/* Dark Background Colors */
+/* Text Colors for Dark Backgrounds */
+/* Fire colors*/
+/* Light grey */
+.myTechs {
+  display: flex;
+  justify-content: flex-start; /* Centre les icônes horizontalement */
+  align-items: center; /* Centre les icônes verticalement */
+  flex-wrap: wrap; /* Permet aux icônes de passer à la ligne suivante si l'espace est insuffisant */
+  gap: 40px; /* Ajoute un espace entre les icônes */
+}
+
+.myTechs i {
+  font-size: 36px;
+}
+
+.introduction {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+@media (max-width: 1023px) {
+  .indexGrid {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(0.5fr 1fr 0.5fr);
+  }
+  .myPic {
+    /* Faites en sorte que .myPic couvre 3x3 cases */
+    grid-column: 1;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 5px solid #B0B0B0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .myPic img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; /* Cela ajuste l'image à l'espace disponible sans déformation */
+    border-radius: 50%; /* Si l'image doit être ronde */
+  }
+  h3 {
+    margin-bottom: 4px;
+    font-size: 1.125rem;
+  }
+  p {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .myTechs i {
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+@media (min-width: 1024px) {
+  .indexGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+  }
+  .myPic {
+    /* Faites en sorte que .myPic couvre 3x3 cases */
+    grid-column: 2;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 5px solid #B0B0B0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .myPic img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; /* Cela ajuste l'image à l'espace disponible sans déformation */
+    border-radius: 50%; /* Si l'image doit être ronde */
+  }
+  h3 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+@media (min-width: 1440px) {
+  .indexGrid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+  }
+  .myPic {
+    /* Faites en sorte que .myPic couvre 3x3 cases */
+    grid-column: 2;
+    grid-row: 1;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    border: 5px solid #B0B0B0;
+    overflow: hidden;
+    box-sizing: border-box;
+  }
+  .myPic img {
+    max-width: 100%;
+    max-height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover; /* Cela ajuste l'image à l'espace disponible sans déformation */
+    border-radius: 50%; /* Si l'image doit être ronde */
+  }
+  h3 {
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-size: 1.5rem;
+  }
+  p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+}
+main {
+  margin: 0 auto;
+  padding: 30px 30px;
+}
+
+.boldLink {
+  font-weight: bold;
+}
+
+@media (max-width: 1023px) {
+  li {
+    font-size: 15px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .projectExplaination {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (min-width: 1024px) {
+  li {
+    font-size: 16px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .projectExplaination {
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1444px) {
+  li {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    margin-top: 2px;
+    margin-bottom: 2px;
+  }
+  .projectExplaination {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/*BACKGROUND-COLORS*/
+/* Text Colors for Contrast */
+/* For $clearBackground2 */
+/* Dark Background Colors */
+/* Text Colors for Dark Backgrounds */
+/* Fire colors*/
+/* Light grey */
+@media (max-width: 1023px) {
+  h2 {
+    position: relative;
+    font-family: "Anta", sans-serif;
+    display: inline-block;
+    font-size: 1.25rem;
+    color: #B0B0B0;
+    left: 9vw;
+  }
+}
+@media (min-width: 1024px) {
+  h2 {
+    position: relative;
+    font-family: "Anta", sans-serif;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #B0B0B0;
+    left: 9vw;
+  }
+}
+@media (min-width: 1440px) {
+  h2 {
+    position: relative;
+    font-family: "Anta", sans-serif;
+    display: inline-block;
+    font-size: 2.5rem;
+    color: #B0B0B0;
+    left: 9vw;
+  }
+}
+.switch {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #162238;
+  transition: 0.4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #f0f0f0;
+  transition: 0.4s;
+}
+
+input:checked + .slider:before {
+  background-color: #162238; /* Couleur lorsque coché */
+}
+
+input:checked + .slider {
+  background-color: #f0f0f0;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #f0f0f0;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}/*# sourceMappingURL=style.css.map */

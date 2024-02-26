@@ -1,0 +1,185 @@
+@import '_colors';
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 30px;
+    z-index: 10;
+    opacity:1;
+    // La couleur de fond est gérée par _darkMode.scss
+}
+
+.logo a {
+    display: inline-block;
+    font-weight: bold; // Met le texte en gras
+    font-size: 24px; // Agrandit la police et l'emoji, ajustez selon vos besoins
+    position: relative;
+    top:-6px;
+    &:before {
+      content: "{🔥}";
+      font-size: 1.5em; // Agrandit spécifiquement l'emoji si nécessaire
+      // Note: 1.5em fait que la taille de l'emoji sera 1.5 fois celle du texte environnant dans .logo a
+    }
+  }
+
+.nav-menu {
+    align-items: center;
+}
+
+// Lorsque le header devient sticky
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+  }
+
+@media (max-width: 1023px) {
+    // Mobile first
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 10;
+        position: static;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: 0.4s ease-in-out; // Cette ligne s'applique à toutes les transformations et modifications d'opacité
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+        transition: 0.4s
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+        transition: 0.4s
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-12px) rotate(-45deg);
+        transition: 0.4s
+    }
+
+//Version alpha
+    .menu-liste {
+        display: flex; /* Remplacez 'none' par 'flex' pour permettre la transition */
+        flex-direction: column;
+        position: fixed; /* ou 'absolute', selon le besoin */
+        top: 133px;
+        z-index: 100; /* Assure que le menu est au-dessus des autres éléments */
+        opacity: 0; /* Commencez invisible */
+        visibility: hidden; /* Rendre non visible initialement */
+        transition: visibility 0s linear 0.4s, opacity 0.4s linear; /* Transition pour 'visibility' et 'opacity' */
+        right: 0px;
+        width: 50%;
+    }
+
+    .nav-menu ul li {
+        text-align: center;
+    }
+
+    .menu-liste.active {
+        opacity: 1; /* Pleinement visible quand actif */
+        visibility: visible; /* Rendre visible */
+        transition: opacity 0.4s linear; /* Transition pour 'opacity' seulement, 'visibility' n'a pas besoin de retard ici */
+    }
+
+// //Version test
+// .menu-liste {
+//     display: flex; /* Gardez cette propriété */
+//     flex-direction: column;
+//     position: fixed;
+//     top: 133px;
+//     z-index: 100;
+//     opacity: 0; /* Commencez invisible */
+//     visibility: hidden; /* Rendre non visible initialement */
+//     transition: visibility 0s linear 0.4s, opacity 0.4s linear;
+//     right: 0px;
+//     width: 50%; /* Ou ajustez selon le besoin */
+// }
+
+// .nav-menu {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center; /* Ajouté pour centrer les éléments */
+
+// }
+
+// .nav-menu li {
+//     width: 100%; /* Assure que chaque élément de liste occupe toute la largeur disponible */
+//     text-align: center; /* Centre le texte à l'intérieur de chaque élément de liste */
+//     display: flex;
+// }
+
+// .nav-menu li a {
+//     display: block; /* Transforme le lien en bloc pour permettre le centrage du texte */
+//     width: 100%; /* Assure que le lien occupe toute la largeur de l'élément li */
+//     align-items: center;
+//     text-align: center;
+// }
+
+// .menu-liste.active {
+//     opacity: 1; /* Pleinement visible quand actif */
+//     visibility: visible; /* Rendre visible */
+//     transition: opacity 0.4s linear; /* Transition pour 'opacity' seulement, 'visibility' n'a pas besoin de retard ici */
+// }
+
+    
+// Pading pour le h1
+header + main {
+    padding-top: 140px; // Ajustez cette valeur pour correspondre à la hauteur de votre header sticky
+    }
+}
+
+// Wide screens
+@media (min-width: 1024px) {
+    .hamburger {
+        display: none;
+    }
+    .menu-liste {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: auto;
+        opacity: 1; /* Test du code */
+        visibility: visible; /* Test du code */
+        top: 40px; /* Ajusté pour 'margin-top: 238px;' */
+        // right: 30px;
+    }
+    .menu-liste ul {
+        display: flex;
+        justify-content: flex-end;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+    .menu-liste li {
+        padding: 0 10px;
+    }
+
+    .menu-liste li:last-child {
+        padding-right: 0;
+    }
+
+    .dark-mode-toggle {
+        bottom: 3px;
+    }
+
+    
+
+header + main {
+    padding-top: 140px; // Ajustez cette valeur pour correspondre à la hauteur de votre header sticky
+    }
+
+}

@@ -1,0 +1,22 @@
+@import '_fonts.scss';
+@import '_colors.scss';
+
+h1 {
+    position: relative;
+    font-family: $roboticFont;
+    display: inline-block;
+    font-size: 5em;
+    color: $orangeFire;
+    left : 6vw;
+}
+
+span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+}
+
+@keyframes caret {
+    50% {
+    border-color: transparent;
+    }
+}

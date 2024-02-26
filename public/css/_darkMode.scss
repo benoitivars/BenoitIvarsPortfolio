@@ -1,0 +1,73 @@
+@import '_colors'; // Importez vos variables de couleur
+
+/* Styles par défaut pour le mode clair */
+body {
+    transition: background-color 0.4s, color 0.4s;
+    background-color: $clearBackground2; // Fond clair pour le body
+    color: $textColorForBg2; // Texte pour fond clair pour le body
+}
+
+header {
+    transition: background-color 0.4s, color 0.4s;
+    background-color: $clearBackground2;
+    border-bottom: 2px $textColorForBg2 solid;
+}
+
+footer {
+    transition: background-color 0.4s, color 0.4s;
+    background-color: $clearBackground2;
+    border-top: 2px $textColorForBg2 solid; 
+}
+
+.bottomBar {
+    background-color : $textColorForBg2;
+}
+
+a {
+    transition: background-color 0.4s, color 0.4s;
+    color: $textColorForBg2; // Couleur du texte pour les liens en mode clair
+}
+
+.hamburger .bar {
+    transition: background-color 0.4s, color 0.4s;
+    background-color: $textColorForBg2; // Couleur de fond pour les barres en mode sombre
+}
+
+.menu-liste.active {
+    border : 2px $textColorForBg2 solid;
+    background-color: $clearBackground2;
+}
+
+/* Styles pour le mode sombre */
+.dark-mode {
+    background-color: $darkBackground2; // Fond sombre pour le body
+    color: $textColorForDarkBg2; // Texte pour fond sombre pour le body
+    
+    header {
+        background-color: $darkBackground2;
+        border-bottom: 2px $textColorForDarkBg2 solid;
+    }
+
+    footer {
+        background-color: $darkBackground2;
+        border-top: 2px $textColorForDarkBg2 solid; 
+    }
+
+    .bottomBar {
+        background-color: $textColorForDarkBg2;
+    }
+
+    a {
+        color: $textColorForDarkBg2; // Couleur du texte pour les liens en mode sombre
+    }
+
+    .hamburger .bar {
+        background-color: $textColorForDarkBg2; // Couleur de fond pour les barres en mode sombre
+    }
+
+    .menu-liste.active {
+        border : 2px $textColorForDarkBg2 solid;
+        background-color: $darkBackground2;
+    }
+    
+}
