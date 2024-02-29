@@ -9,7 +9,7 @@
     app.set('views', path.join(__dirname, 'views'));
     
     // Dossiers statiques
-    app.use(express.static('public'));
+    app.use(express.static(path.join(__dirname, 'public')));
     
     // Configuration de MongoDB
     
