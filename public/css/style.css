@@ -32,6 +32,11 @@ a, p, h3 {
   line-height: 2;
 }
 
+ul li {
+  line-height: 1.6; /* Ajuste l'espacement entre les lignes de texte dans chaque élément de la liste */
+  margin-bottom: 10px;
+}
+
 body {
   font-size: 16px;
 }
